@@ -11,6 +11,7 @@ services:
       - cluster.initial_master_nodes=es-hot,es-warm
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
     volumes:
       - data01:/usr/share/elasticsearch/data:Z
     ulimits:
@@ -20,8 +21,11 @@ services:
       nofile:
         soft: 65536
         hard: 65536
+    cap_add:
+      - IPC_LOCK
     ports:
       - 9200:9200
+      - 9300:9300
     networks:
       - elastic
     depends_on:
@@ -37,6 +41,7 @@ services:
       - cluster.initial_master_nodes=es-hot,es-warm
       - bootstrap.memory_lock=true
       - "ES_JAVA_OPTS=-Xms512m -Xmx512m"
+      - xpack.security.enabled=false
     volumes:
       - data02:/usr/share/elasticsearch/data:Z
     ulimits:
@@ -46,6 +51,8 @@ services:
       nofile:
         soft: 65536
         hard: 65536
+    cap_add:
+      - IPC_LOCK
     networks:
       - elastic
 
@@ -97,6 +104,8 @@ services:
     volumes:
       - ./pinger/run.py:/opt/run.py:Z
     entrypoint: python3 /opt/run.py
+    networks:
+      - elastic
 
 volumes:
   data01:
