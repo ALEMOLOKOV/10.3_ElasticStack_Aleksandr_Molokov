@@ -17,4 +17,4 @@ while True:
     elif number == 3:
         logging.exception(Exception('this is exception'))
 
-    time.sleep(1)
+    time.sleep(120)
