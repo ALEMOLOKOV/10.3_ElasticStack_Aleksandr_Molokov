@@ -37,6 +37,23 @@ Filebeat следует сконфигурировать для отправки
 Через 5 минут все контейнеры работают
 ![контейнера после 5 минут](https://user-images.githubusercontent.com/109212419/230674547-b4c97a37-3b15-4f8f-95a9-9ff692b1256f.jpg)
 
+Состояние нод и кластера Elasticsearch (все вроде нормально)
+
+![состояние нод и кластера](https://user-images.githubusercontent.com/109212419/230794568-9207a6ed-5672-49d3-929a-8165e50204bf.jpg)
+
+# Скриншоты docker-compose up
+
+![docker-compose up](https://user-images.githubusercontent.com/109212419/230794816-4b62608e-9900-426b-b972-63ff6b40c65d.jpg)
+
+![docker-compose up filebeat](https://user-images.githubusercontent.com/109212419/230794825-b7ac4d2f-243e-44a5-bea2-8f39d2785e5c.jpg)
+
+![docker-compose up filebeat 1](https://user-images.githubusercontent.com/109212419/230794834-7ad444bc-00fb-4a87-8ece-821beff4c6a4.jpg)
+
+![docker-compose up kibana](https://user-images.githubusercontent.com/109212419/230794843-10d3b3fc-3758-4988-a253-688a3321bb0c.jpg)
+
+![docker-compose up logstash](https://user-images.githubusercontent.com/109212419/230794852-e966f9ef-c6f9-48e2-b6c9-c6e5325c9d9d.jpg)
+
+
 Kibana запустилась
 
 ![kibana start](https://user-images.githubusercontent.com/109212419/230674256-dec8d972-7d59-4205-863e-76aed365888d.jpg)
