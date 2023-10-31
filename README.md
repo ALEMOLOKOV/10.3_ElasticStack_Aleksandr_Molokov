@@ -26,7 +26,7 @@ Filebeat следует сконфигурировать для отправки
 # Ответ
 Создал ВМ в YandexCloud, запустил docker-compose результат на скриншоте
 
-![yandexcloud start containers](https://user-images.githubusercontent.com/109212419/230673890-9b28f573-8096-41e3-aa77-c98a67e94ad0.jpg)
+![ВМ](https://github.com/ALEMOLOKOV/10.3_ElasticStack_Aleksandr_Molokov/assets/109212419/a6d806c6-0064-4dce-b759-3a444396de86)
 
 Контейнеры es-hot и es-warm падали после 1 минуты
 ![ноды отключаются из-за слишком большого объема расходуемой памяти](https://user-images.githubusercontent.com/109212419/230674168-8022d915-8e49-4aa7-a815-541559c29128.jpg)
@@ -56,10 +56,11 @@ Filebeat следует сконфигурировать для отправки
 
 Kibana запустилась
 
-![kibana start](https://user-images.githubusercontent.com/109212419/230674256-dec8d972-7d59-4205-863e-76aed365888d.jpg)
+![кибана запустилась](https://github.com/ALEMOLOKOV/10.3_ElasticStack_Aleksandr_Molokov/assets/109212419/24786d33-1510-4386-80ea-4f1c33e9c5c4)
 
-В разделе Index managment пусто
-![index menagment](https://user-images.githubusercontent.com/109212419/230674577-89928661-5753-4d1b-8547-74df00c36da6.jpg)
+Index managment
+
+![index managment](https://github.com/ALEMOLOKOV/10.3_ElasticStack_Aleksandr_Molokov/assets/109212419/1301d7f0-6865-417c-b2dc-00ec2dbdbc2f)
 
 
 
@@ -71,4 +72,19 @@ Kibana запустилась
 
 В манифесте директории help также приведенно dummy-приложение, которое генерирует рандомные события в stdout-контейнера.
 Эти логи должны порождать индекс logstash-* в elasticsearch. Если этого индекса нет — воспользуйтесь советами и источниками из раздела «Дополнительные ссылки» этого задания.
- 
+
+### Ответ
+
+### Создание index-patterns
+![создание паттерна](https://github.com/ALEMOLOKOV/10.3_ElasticStack_Aleksandr_Molokov/assets/109212419/4f6d149c-df98-43ee-bbd1-2a4d2f1262ea)
+
+![2 паттерн](https://github.com/ALEMOLOKOV/10.3_ElasticStack_Aleksandr_Molokov/assets/109212419/8411dc63-4f6a-4694-b0ec-ee3e47ab45c9)
+
+### Поиск по логам 
+Поиск по агенту
+![поиск по агенту](https://github.com/ALEMOLOKOV/10.3_ElasticStack_Aleksandr_Molokov/assets/109212419/8e7aefc1-17c2-474b-ae3c-dbde7a6c4757)
+
+### Поиск по ноде
+![поиск по ноде](https://github.com/ALEMOLOKOV/10.3_ElasticStack_Aleksandr_Molokov/assets/109212419/028eb1fa-0b51-4e78-951b-4e8b2e22c533)
+
+
